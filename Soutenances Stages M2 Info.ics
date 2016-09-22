@@ -1,0 +1,1024 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+VERSION:2.0
+X-WR-CALNAME:Soutenances Stages M2 Info
+PRODID:-//Apple Inc.//Mac OS X 10.11.5//EN
+X-WR-CALDESC:pscvhdftens7letvh86vd15tec@group.calendar.google.com
+X-APPLE-CALENDAR-COLOR:#5229A3
+X-WR-TIMEZONE:Europe/Paris
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Dublin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+DTSTART:19810329T010000
+TZNAME:UTC+1
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+DTSTART:19961027T020000
+TZNAME:UTC
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+DTSTART:19810329T020000
+TZNAME:UTC+2
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+DTSTART:19961027T030000
+TZNAME:UTC+1
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160906T094500
+UID:Icald04a76e28f804f8762ed662a82ed5165
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A1
+DESCRIPTION: L'objectif était de passer d'une application JAVA vers une 
+ solution node.js.\nStage effectué par Sufiane Souissi à Ekino.\nRéférent
+  entreprise : Matthieu Comby\nTuteur universitaire : Lionel Seinturier
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY: Conception et développement d’une application permettant l’orch
+ estration et le provisioning d’un ensemble de services online à la deman
+ de et à la destination des professionnels dans un cloud privé.
+DTSTART;TZID=Europe/Dublin:20160906T090000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160908T103000
+UID:Ical1559ea94b8e2e085bc0866bfa70f4e23
+DTSTAMP:20160906T135227Z
+LOCATION:M5 - A14
+DESCRIPTION:reconnaissance d'objet à partir d'une Kinect V2 dans un envi
+ ronnement intérieur.\nStage effectué par Elliot Vanegue dans l'équipe 3D
+ -SAM.\nRéférent entreprise : Hazem Wannous\nTuteur universitaire : Fabri
+ ce Aubert
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Approche sémantique de segmentation et de recherche interactive 
+ par le contenu issu d'une caméra de profondeur.
+DTSTART;TZID=Europe/Dublin:20160908T094500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160906T135227Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160908T094500
+UID:Ical5c9c4f94c1556eb9713fd987b0b12708
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:L'objectif est d'automatiser l'administration système pour q
+ ue même des développeurs web comprennent.\nStage effectué par Monbailly 
+ Jean-Serge à Dernier Cri.\nRéférent entreprise : Robin Komiwes\nTuteur u
+ niversitaire : Julien Iguchi-Cartigny
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Automatisation de tâches d'administration système
+DTSTART;TZID=Europe/Dublin:20160908T090000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160906T151500
+UID:Icalbc6f022130dd28b19920e20a784e2db3
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:Ce nouveau service permettra de notifier un utilisateur par 
+ mail\, sms ou autre moyen lorsqu’il recevra un message sur sa messagerie
+  vocale. Pour ceci\,on s'appuiera sur le moteur de reconnaissance vocale
+  Nuance (moteur utilisé par  Apple)..\nStage effectué par François Dubie
+ z à Worldline.\nRéférent entreprise : Julien Derouck.\nTuteur universita
+ ire : Jean-Claude Tarby
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Transcription d'un message vocal avec le moteur Nuance
+DTSTART;TZID=Europe/Dublin:20160906T143000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160907T141500
+UID:Ical3c253ed2bc90be53d61a85b197051f8a
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A1
+DESCRIPTION:Beaucoup de sites webs contiennent des données plus ou moins
+  hétérogènes et non structurées.\nLes bases NoSQL ( acronyme de « pas se
+ ulement SQL » ) changent des SGBD classiques et sont plus adaptées à cer
+ tains usages en donnant plus de liberté sur les données.\nL’objectif de 
+ mon stage était d’apporter plus de flexibilité au module Référentiel dév
+ eloppé par l’équipe IT-Toolbox en proposant une v2 de celui-ci tout en u
+ tilisant des technologies telles que le JAVA JEE\, Angular JS… \nRéféren
+ t entreprise : Roussel François \nTuteur Universitaire : Pupin Maude 
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY: Etudes des SGBD dans un référentiel de service
+DTSTART;TZID=Europe/Dublin:20160907T133000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160907T151500
+UID:Ical8bbcb1773fd09f4d03f789f63494ae0c
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:Proposer une nouvelle approche de dissémination des données 
+ mobiles dans le but d'améliorer la protection de la vie privée.\nStage e
+ ffectué par Romain Sommerard à l'Inria.\nRéférent laboratoire : Romain R
+ ouvoy\nTuteur universitaire : Pierre Allegraud
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:De la protection de la vie privée à L'Inria
+DTSTART;TZID=Europe/Dublin:20160907T143000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160909T151500
+UID:Ical9bcd944b88ff255eaf189b631e96c97b
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:L'objectif était de réaliser de la maintenance d'application
+  pour le compte d'un client bancaire (BNPParibas).\nStage effectué par S
+ ofiane YOUSFI à GFI Informatique.\nRéférent entreprise : Vincent VALLEZ\
+ nTuteur universitaire : Lionel SEINTURIER
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Tierce Maintenance applicative sur des projets JEE
+DTSTART;TZID=Europe/Dublin:20160909T143000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160906T103000
+UID:Icala97d74acb68e716eab5ec970951e74c7
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A1
+DESCRIPTION:L'objectif était de développer une activité commerciale sur 
+ Amazon\nStage effectué par Rémi Godbille à Ponera.\nRéférent entreprise 
+ : Sylvain Flipot\nTuteur universitaire : Marius Bilasco
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:A la conquête d'Amazon
+DTSTART;TZID=Europe/Dublin:20160906T094500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160908T141500
+UID:Icale54c0d056814450314acf8f1c4bccd82
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:L'objectif était d'implémenter une solution de centralisatio
+ n de fichiers journaux\, tout en respectant les contraintes données.\nSt
+ age effectué par Anthony Djenane à Worldline.\nRéférent entreprise : Tho
+ mas Langlois\nTuteur universitaire : Gilles Grimaud
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Centralisation de logs avec Graylog
+DTSTART;TZID=Europe/Dublin:20160908T133000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160906T141500
+UID:Icalf0c9cb09f7623abbcea1ecf1da8bd64c
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A1
+DESCRIPTION:Développement front-end :\n-Implémentation d'interfaces de g
+ estion\, de sites web-mobile et responsive design\n-Préparation d'une mi
+ gration de Angular 1.x vers Angular 2.x\n\n Participation à l'élaboratio
+ n d'un nouvel outil pour une solution d'analytics/CRM\n\nDivers développ
+ ements d'applications en ASP .Net MVC\n\nStage effectué par Benjamin PAR
+ ANT chez Phoceis.\nRéférent entreprise : Rémi DESPELCHIN\nTuteur univers
+ itaire : Jean-Claude TARBY
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Développement Front-End & Amélioration d'un outil d'une solution
+  d'Analytics/CRM
+DTSTART;TZID=Europe/Dublin:20160906T133000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160908T170000
+UID:Icald30474bd9aecd466b3bcc58df916ebf5
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:Intégration d’un PKI et d’un service d’otp à une infrastruct
+ ure existante.\nStage effectué par Rémi Pouillard à Inovelan.\nRéférent 
+ entreprise : Nicolas Lemaire\nTuteur universitaire : Eric Meunier
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:[HUIS CLOS] Refonte de l’authentification client
+DTSTART;TZID=Europe/Dublin:20160908T160000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20161108T000000
+UID:Icalf35df4f5c57be7ef524d58c0eca27c25
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:Suivi de la création d'une application Android\, du développ
+ ement à la livraison. \nStage effectué par Thibault Rosa à Capgemini\nRé
+ férent entreprise : Chloé Delecroix\nTuteur universitaire : Patricia Plé
+ nacoste
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Réalisation de l'application Marionnaud France
+DTSTART;TZID=Europe/Dublin:20161107T230000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160909T164500
+UID:Icalae62b55880aeeacd04cf398ec5e49490
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Développement Java pour Enedis (anciennement ERDF) 
+DTSTART;TZID=Europe/Dublin:20160909T160000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160909T124500
+UID:Icaledba674c9f2ea7cc109af35480fafa61
+DTSTAMP:20160902T060614Z
+LOCATION:M5 - A2
+DESCRIPTION:L'objectif était de réaliser un outil de cartographie de flu
+ x ESB.\nStage effectué par Ouamar Sais à Capgemini.\nRéférent entreprise
+  : Paul Hardelin\nTuteur universitaire : Jean-Christophe Routier
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Cartographie Flux - ESB
+DTSTART;TZID=Europe/Dublin:20160909T120000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160902T060614Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160907T151500
+UID:Icalea24081fe15e21c89ac4329e38d14c00
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A1
+DESCRIPTION:L'objectif principal était d'améliorer et recréer des méthod
+ es pour obtenir des meilleurs résultats.\nStage effectué par Congcong Xu
+  à Inria.\nRéférent entreprise : Maude Pupin\nTuteur universitaire : Mar
+ ius Bilasco
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Évolutions pour le logiciel Smiles2Monomers
+DTSTART;TZID=Europe/Dublin:20160907T143000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160907T124500
+UID:Ical3edd9afa269c210d389583d438a5ccbb
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:Ce stage comportait deux objectifs majeurs : le premier étai
+ t d'améliorer le simulateur de réseaux de neurones impulsionnels dévelop
+ pé par l'équipe Émeraude\, nommé N2S3\, pour le rendre open-source. L'au
+ tre objectif était de reproduire plusieurs expériences portant sur ce ty
+ pe de modèles afin de mieux comprendre leurs fonctionnements.\nStage eff
+ ectué par Pierre Falez dans l'équipe Émeraude.\nRéférent entreprise : Pi
+ erre Boulet\, Philippe Devienne\, Pierre Tirilly\nTuteur universitaire :
+  Bilel Derbel
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Simulation de réseaux de neurones impulsionnels
+DTSTART;TZID=Europe/Dublin:20160907T120000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160908T133000
+UID:Ical1e6e0c7ae477bfff9679d80d30702fdd
+DTSTAMP:20160906T135228Z
+LOCATION:M3 - Amphi Turing
+DESCRIPTION:Est il possible de faire évoluer des robots en utilisant la 
+ thèorie de l'évolution de Darwin?\nStage effectué par Valentin Owczarek.
+ \n INRIA équipe Defrost\nRéférent entreprise : Damien Marchal\nTuteur un
+ iversitaire : Bilel Derbel
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY: Algorithme évolutionnaire et robot déformable
+DTSTART;TZID=Europe/Dublin:20160908T124500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160906T135228Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160907T094500
+UID:Ical8e2fd25753172efd1a8269c1fd36bfd4
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A1
+DESCRIPTION:L'objectif était de maintenir et de développement des applic
+ ation mobile en Android ou iOS.\nStage effectué par Salsabile HAKIMI à P
+ ictime.\nRéférent entreprise : Arnaud Bournouville\nTuteur universitaire
+  : Jean-Claude Tarby
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Développement mobile
+DTSTART;TZID=Europe/Dublin:20160907T090000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160907T103000
+UID:Icalf890117f809bfbab415f90ecd0e07d95
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:L'objectif est d'implémenter le design pattern MapReduce à l
+ 'aide d'un système multi-agents et de répartir les tâches en cours d'exé
+ cution à l'aide négotiations décentralisées et simultanées entre agents.
+ \nStage effectué par Quentin Baert dans l'équipe SMAC - Laboratoir CRISt
+ AL.\nRéférents : Anne-Cécile Caron\, Maxime Morge\, Jean-Christophe Rout
+ ier\nTuteur universitaire : Samuel Hym
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Allocation équitable de tâches pour l’analyse de données massive
+ s
+DTSTART;TZID=Europe/Dublin:20160907T094500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160907T081500
+UID:Ical4bd32abc4245b7b115a9f72ed9b45f1f
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:L'objectif était d'étudier l'impact du l'ajout d'un modèle d
+ e substitution au sein de l'algorithme Moea/D et d'en comprendre la dyna
+ mique afin de proposer des approches améliorant l'existant.\nStage effec
+ tué par Alexandre Verkyndt à Shinshu University.\nRéférent entreprise : 
+ Hernan Aguirre\nTuteur universitaire : Bilel Deberl & Arnaud Liefooghe
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY: Expensive multi-objective optimization with decomposition and s
+ urrogate models
+DTSTART;TZID=Europe/Dublin:20160907T073000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160906T164500
+UID:Icalcb31c9146b872cb096fbaf4faa077bce
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A1
+DESCRIPTION:Chez Ouistock\, startup spécialisée dans le stockage entre p
+ articuliers\, j'ai notamment travaillé sur le back-office du site web af
+ in d'y ajouter de nouvelles fonctionnalités\, tout en faisant évoluer l'
+ application existante vers une architecture microservices.\nStage effect
+ ué par Bernard Thomas chez Ouistock.\nRéférent entreprise : Michiel Miss
+ otten\nTuteur universitaire : Lionel Seinturier
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Évolution d'une application monolithique vers une architecture o
+ rientée services chez Ouistock
+DTSTART;TZID=Europe/Dublin:20160906T160000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160908T160000
+UID:Ical18c5f6d2a7a5b61a6e51ec5c20930afb
+DTSTAMP:20160906T135230Z
+LOCATION:M5 - A2
+DESCRIPTION:Ce stage de recherche a consisté à travailler sur la mise en
+  place d'un système d'exploitation temps réel avec de très fortes propri
+ étés de sécurité liée aux fuites mémoire.\nStage effectué par Mahieddine
+  Yaker dans l'équipe 2XS\nEncadré par Gilles Grimaud et Julien Cartigny\
+ nTuteur universitaire : Samy Meftali\n
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Tour de virtualisation
+DTSTART;TZID=Europe/Dublin:20160908T151500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160906T135230Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160908T151500
+UID:Icalf8469570b5458ce32405aad45c3a9d50
+DTSTAMP:20160906T135229Z
+LOCATION:M3 - Amphi Turing
+DESCRIPTION:L'objectif était d'étudier les méthodes de traitement et d'a
+ nalyse d'images dans un but prédictif et de les mettre en pratique sur u
+ n projet concret.\nStage effectué par Delphine Poux à CGI France.\nRéfér
+ ent entreprise : Hamid Hashemi\nTuteur universitaire : Marius Bilasco
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Comment prédire la tendance vestimentaire de 2017 au vu des défi
+ lés des années précédentes ?
+DTSTART;TZID=Europe/Dublin:20160908T143000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160906T135229Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160908T160000
+UID:Ical8a8763d5bc2d24cd4c8dbd37a65fdb0d
+DTSTAMP:20160906T135229Z
+LOCATION:M3 - Amphi Turing
+DESCRIPTION:L'objectif était de développer un software permettant de tra
+ iter les données électrodermales capturées par nos capteurs afin de déga
+ ger des métriques et informations facile à interpréter sur l'état émotio
+ nnel de l'utilisateur.\nStage effectué par Ghigny Corentin à NEOTROPE.\n
+ Référent entreprise : Olivier Janin\nTuteur universitaire : Thomas Pietr
+ zak
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:[HUIS-CLOS] Développement d'un bracelet de captation électroderm
+ ale et le software pour l'interpréter
+DTSTART;TZID=Europe/Dublin:20160908T151500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160906T135229Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160908T103000
+UID:Icald95376f24112c1b91862115475c96ee8
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:Cette soutenance va présenter ce qu'est l'object storage\, p
+ résenter les différentes technos utilisées\, ainsi que mon travail.\nAu 
+ programme\, Cryptographie\, Système distribués\, et autres joies :).\nPa
+ s de bonbons malheuresement\, désolé :(.\nStage effectué par Julien Blan
+ quart à OpenIO.\nRéférent entreprise : Jean-François Smigielski\nTuteur 
+ universitaire : Julien Iguchi-Cartigny
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Développement sur un système de stockage objet massivement distr
+ ibué
+DTSTART;TZID=Europe/Dublin:20160908T094500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160909T160000
+UID:Ical981381ac8399627a0a490d41dce4407a
+DTSTAMP:20160831T140451Z
+LOCATION:M5 - A2
+DESCRIPTION:Retour d'expérience sur la conception et le développement fr
+ om scratch  et en mode startup\,  d'un portail communautaire d'avis sur 
+ les prestations de professionnels du service. \nStage effectué par Antoi
+ ne Philippe à Zenika.\nRéférent entreprise : Gwennaël Buchet\nTuteur uni
+ versitaire : Xavier Le Pallec
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Conception et développement d'une application Web en mode Startu
+ p
+DTSTART;TZID=Europe/Dublin:20160909T151500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Dublin:20160902T084500
+UID:Ical9368e28a28b306bbc1b661a55ad5b36d
+DTSTAMP:20160831T140451Z
+LOCATION:M3 - 226
+DESCRIPTION:L'objectif est de réaliser de la traduction automatique bili
+ ngue et d'améliorer les scores de traduction de l'état de l'art. Nous ut
+ ilisons des réseaux de neurones pour arriver à nos fins.
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Traduction automatique via deep learning
+DTSTART;TZID=Europe/Dublin:20160902T080000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160831T140451Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160909T113000
+UID:Icald707c721a4bbb6f773b035ab13f15646
+DTSTAMP:20160905T093537Z
+LOCATION:M5 - A2
+DESCRIPTION: Développements dans le cadre du programme Gazpar (GrDF) et 
+ du déploiement de compteurs dits intelligents.\nStage effectué par Thiba
+ ud Verbaere à CapGemini.\nRéférent entreprise : Julien Maillard\nTuteur 
+ universitaire : Patricia Plénacoste
+STATUS:CONFIRMED
+SEQUENCE:1
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY: La vie sur Gazpar
+DTSTART;TZID=Europe/Paris:20160909T104500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160905T093537Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160907T134500
+UID:Ical4d02ff5d363dfdd499620bb65f2d83a4
+DTSTAMP:20160905T093458Z
+LOCATION:M5 - A1
+DESCRIPTION:L'objectif était de pouvoir utiliser une application web san
+ s connexion internet\, grâce à AngularJS et la gestion du cache.\nStage 
+ effectué par Aouragh Farid à Open Groupe.\nRéférent entreprise : Nicolas
+  Tondeur\nTuteur universitaire : Loan Marius Bilasco
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY: Application Off line avec AngularJS
+DTSTART;TZID=Europe/Paris:20160907T130000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160905T093458Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160906T091500
+UID:Ical8e76da93090a07fc9ab03e2f7f8d65aa
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A1
+DESCRIPTION:Développement d'une application mobile de paiement pour Deca
+ thlon à partir d'un prototype existant.\nStage effectué par Etienne Cuvi
+ llon à Nextoo.\nRéférent entreprise : Vianney Apreleff\nTuteur universit
+ aire : Marius Bilasco
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY: Industrialisation d'un prototype d'application mobile
+DTSTART;TZID=Europe/Paris:20160906T083000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160906T170000
+UID:Ical3c8731a808d66fb856daccc4a08b2208
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A1
+DESCRIPTION:L'objectif était de passer de Magento 1 à Magento 2 sur Elec
+ tro Depot.\nStage effectué par Gamba Jordann à Pictime.\nRéférent entrep
+ rise : Jean-Philippe Leschaeve\nTuteur universitaire : Lionel Seinturier
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Du Magento 2 pour Electro Depot
+DTSTART;TZID=Europe/Paris:20160906T161500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160906T134500
+UID:Icalcba1b6c80373011220b85b89ab09fdb5
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A2
+DESCRIPTION: Le but du stage était de mettre en place un système d'intég
+ ration continue avec mesure de qualité de code (tests unitaires\, couver
+ ture de code ...).\nStage effectué par Knapik Christopher au Laboratoire
+  d'Optique Atmosphérique.\nRéférent entreprise : Fabrice Ducos\nTuteur u
+ niversitaire : Ioan Marius Bilasco
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY: Intégration continue en environnement de recherche.
+DTSTART;TZID=Europe/Paris:20160906T130000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160907T143000
+UID:Ical0f8aaeeabf4955886e8410343898efa6
+DTSTAMP:20160901T091447Z
+LOCATION:M5 - A1
+DESCRIPTION:L'objectif principal était de réaliser des applications mobi
+ les destinées au domaine de l’optique. Stage effectué par Anne-Sophie Sa
+ int-Omer à White Rhino Apps.\nStage effectué par Anne-Sophie Saint-Omer.
+ \nRéférent entreprise : Kevin Gill\nTuteur universitaire : Marius Bilasc
+ o
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Développement Android et iOS à White Rhino Apps (Portsmouth\, UK
+ )
+DTSTART;TZID=Europe/Paris:20160907T134500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091447Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160908T104500
+UID:Icalffec98f0ec3cd70c578d1cbb771c8fc8
+DTSTAMP:20160906T135226Z
+LOCATION:M5 - A14
+DESCRIPTION:Exploration of Perturbability of Software.\nStage effectué p
+ ar Benjamin DANLGLOT a l'INRIA.\nRéférent entreprise : Martin Monperrus/
+ Philippe Preux\nTuteur universitaire : Xavier Le Pallec
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Perturbability of Software
+DTSTART;TZID=Europe/Paris:20160908T100000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160906T135226Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160909T143000
+UID:Ical7d858e6f12b227d0dfd7a6429557adad
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A8
+DESCRIPTION:Stage effectué dans le cadre d'une étude R&D à Worldline. Le
+  but était de retrouver la position des produits dans les magasins. Plus
+  précisément de trouver leurs localisations à l'intérieur des étagères p
+ ar des techniques de traitement d'images de vision.\nStage effectué par 
+ Gaëtan Deflandre à Worldline.\nRéférent entreprise : Charlotte Pasqual\n
+ Tuteur universitaire : Ludovic Macaire
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Realogramme - Cartographie de produits
+DTSTART;TZID=Europe/Paris:20160909T134500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160907T170000
+UID:Ical4c2f2f4dca15bfde50a102678f0b31b9
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A2
+DESCRIPTION:The first objective was to develop an automated approach tha
+ t allows an Android developer to deploy a most energy-efficient app than
+  the original one (that can be useful to play PokemonGo few more minutes
+ \, no?).\nResearch internship at LATECE\, Montréal (Canada).\nLaboratory
+  supervisor: Naouel Moha.\nInternship supervisor: Romain Rouvoy
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:An Automated Approach to Assess and Improve the Energy Consumpti
+ on of Android Applications
+DTSTART;TZID=Europe/Paris:20160907T161500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160908T161500
+UID:Ical6c0ce6955adcb43931ae5e4ccdaa41af
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A2
+DESCRIPTION:Interface web de gestion personnalisée de machines virtuelle
+ s.\nStage effectué par Saman Rokni à Televic.\nRéférent entreprise : Rey
+ nald Brussard\nTuteur universitaire : Samy Meftali
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Automatisation de la virtualisation à la Televic
+DTSTART;TZID=Europe/Paris:20160908T153000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160909T113000
+UID:Icalc958572bd6fb5f8279bcf3ac3bccb725
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A8
+DESCRIPTION:L'objectif était d'augmenter le taux de bonnes classificatio
+ ns d'un produit existant qui permet de classifier une personne comme éta
+ nt un enfant ou un adulte basé uniquement sur son visage.\nStage effectu
+ é par Vermeire Xavier à Anaxa-vida\nRéférent entreprise : Chabane Djerab
+ a \nTuteur universitaire : Fabrice Aubert
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Estimation du vieillissement basé sur le visage humain
+DTSTART;TZID=Europe/Paris:20160909T104500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160906T143000
+UID:Icala80b45a118dd85c6fbcbf2109727a7e6
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A1
+DESCRIPTION:À travers un projet d'envergure\, pour la société EQIOM spéc
+ ialisée dans le béton\, j'ai pu participer à l'intégration d'un API REST
+  en Symfony.\nStage effectué par Jonathan Santoni à Ylly.\nRéférent entr
+ eprise : Samuel Quéniart\nTuteur universitaire : Xavier Le Pallec
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Développement Symfony2 et API REST
+DTSTART;TZID=Europe/Paris:20160906T134500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160909T100000
+UID:Ical19fd91a52aa878450eacb96becf9e26a
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A2
+DESCRIPTION:Répondre de manière agile aux besoins des utilisateurs en dé
+ veloppant de nouvelles fonctionnalités dans les outils existants.\nStage
+  effectué par Gissel FERNANDEZ à Open.\nRéférent entreprise : Nicolas TO
+ NDEUR \nTuteur universitaire : Patricia Plénacoste
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Développement J2EE
+DTSTART;TZID=Europe/Paris:20160909T091500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160909T104500
+UID:Icaleb08ad08eefeec133af68cef9c31ab79
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A2
+DESCRIPTION:Le stage avait pour but de participer au développement de no
+ uvelle fonctionalités de solutions en c# /Angular chez un éditeur de log
+ iciel Ainsi que les le développement de correctifs et le soutient a la p
+ artie Intégration. \nStage effectué par Johan Dufaux à Cimail.\nRéférent
+  entreprise : Gonzague Bryckaert\nTuteur universitaire : Patricia Plénac
+ oste
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Développement chez un éditeur de logiciel.
+DTSTART;TZID=Europe/Paris:20160909T100000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160906T100000
+UID:Ical95437c24fc4b4a80f7193b6616db9fa3
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A1
+DESCRIPTION:L'objectif était de sécuriser une application et de développ
+ er des web services.\nStage effectué par Clément Bellart à Nextoo.\nRéfé
+ rent entreprise : Vianney Apreleff\, Cédric Chopin\, Gersende Niel\nTute
+ ur universitaire : Jean-Claude Tarby
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Du PHP chez Kbane et du Java chez Swiss Life
+DTSTART;TZID=Europe/Paris:20160906T091500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160907T100000
+UID:Icalb3c55fa16e2a336f82eedecb2b4921d6
+DTSTAMP:20160901T091133Z
+LOCATION:M5 - A2
+DESCRIPTION:Développement de méthodes d'apprentissage par renforcement i
+ nverse et applications\nStage effectué par Blaise Pascal à INRIA - team 
+ SequeL.\nRéférent entreprise : Bilal Piot\nTuteur universitaire : Xavier
+  Le Pallec
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Inverse Reinforcement Learning
+DTSTART;TZID=Europe/Paris:20160907T091500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160901T091133Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160909T100000
+UID:Ical5721539987beb8b8f7c14cc3e0dc09ec
+DTSTAMP:20160902T060312Z
+LOCATION:M5 - A8
+DESCRIPTION:L'objectif était de mettre en place un service cloud de reco
+ nnaissance faciale pour une solution de stockage cloud existante sur bas
+ e d'une solution de reconnaissance faciale existante.\nStage effectué pa
+ r Scouflaire Emmanuel à Atos Worldline.\nRéférent entreprise : Frédéric 
+ Renou\nTuteur universitaire : Marius Bilasco
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Face recognition in the cloud
+DTSTART;TZID=Europe/Paris:20160909T091500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160902T060312Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160909T151500
+UID:Ical6133fecc649182c31caeb89101884586
+DTSTAMP:20160902T060312Z
+LOCATION:M5 - A2
+DESCRIPTION:Participation à la réalisation d'une application innovante q
+ ui consiste à analyser des données très gros volume et à obtenir une res
+ titution ergonomique au travers de dashboard et de parcours drill-down.\
+ nStage effectué par Jean-Baptiste Delaeter à CGI.\nRéférent entreprise :
+  Rémy Delmotte\nTuteur universitaire : Julien Iguchi-Cartigny
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Développement J2EE/AngularJS
+DTSTART;TZID=Europe/Paris:20160909T143000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160902T060312Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160909T151500
+UID:Icalfb3da372dc27b512b3eff68365637422
+DTSTAMP:20160902T060312Z
+LOCATION:M5 - A8
+DESCRIPTION:Trouver un moyen pour détécter le corps\, les mains\, les po
+ sitionner dans l'espace\, et ajouter plus d'interaction dans la réalité 
+ virtuelle mobile. Différents tests de technologies\, comparatifs\, démos
+ ...\nStage effectué par Léo-Paul Sévin à Homido.\nRéférent entreprise : 
+ Mathieu Parmentier\nTuteur universitaire : Laurent Grisoni
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Positional et body tracking en réalité virtuelle mobile
+DTSTART;TZID=Europe/Paris:20160909T143000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160902T060312Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160909T091500
+UID:Ical6879f5021f002aeb8ee90275ead84c49
+DTSTAMP:20160902T060312Z
+LOCATION:M5 - A2
+DESCRIPTION:Suivi du développement d'une application Android de la conce
+ ption à la livraison.\nStage effectué par Thibault Rosa à Capgemini.\nRé
+ férent entreprise : Chloé Delecroix\nTuteur universitaire : Patricia Plé
+ nacoste
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY: Réalisation de l'application Marionnaud France
+DTSTART;TZID=Europe/Paris:20160909T083000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160902T060312Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160907T143000
+UID:Icald3be558528b28eb979d1c94e24727532
+DTSTAMP:20160902T060312Z
+LOCATION:M5 - A2
+DESCRIPTION:L'objectif est d'améliorer les connaissances sur le système 
+ de production de la surfactine par la bactérie B. Subtilis en complétant
+  l'analyse faite de la modélisation de son réseau de réactions.\nStage e
+ ffectué par Emilie Allart au laboratoire CRIStAL - équipe BioComputing.\
+ nRéférent laboratoire : Cristian Versari\nTuteur universitaire : Maude P
+ upin
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Modélisation et analyse de réseau de réactions avec information 
+ cinétique partielle par les modes élémentaires.
+DTSTART;TZID=Europe/Paris:20160907T134500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160902T060312Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160907T100000
+UID:Ical43855f02900f6b4dad0d33ed9f812f1a
+DTSTAMP:20160902T111718Z
+LOCATION:M5 - A1
+DESCRIPTION:L'objectif était de développer un outil permettant la saisie
+  d'exigences et l'automatisation des tests d'acceptance\nStage effectué 
+ par Nicolas Noullez à Pictime.\nRéférent entreprise : Ahmadou Diouf\nTut
+ eur universitaire : Jean-Claude Tarby
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Un outil d'automatisation des tests en SpringBoot et Angular 2.0
+DTSTART;TZID=Europe/Paris:20160907T091500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160902T111718Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160907T104500
+UID:Ical30fbbda544b92117250c6ed6c974fcf9
+DTSTAMP:20160902T060312Z
+LOCATION:M5 - A2
+DESCRIPTION:Stage effectué par Gausin Rémi au Laboratoire Cristal au sei
+ n de l'équipe SMAC.\nRéférent entreprise : Antoine Nongaillard\nTuteur u
+ niversitaire : Xavier Le Pallec
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Gestion de flotte de véhicules autonomes
+DTSTART;TZID=Europe/Paris:20160907T100000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160902T060312Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160909T161500
+UID:Icaldb0652795aa665c88101a7fcee4d38b4
+DTSTAMP:20160905T093400Z
+LOCATION:M5
+DESCRIPTION: Développement d'un lecteur vidéo 360 sous Unity3D et ajout 
+ de fonctionnalités dans un outil de visualisation pour la R&D.\nStage ef
+ fectué par Durigneux Antoine à Giroptic.\nRéférent entreprise : Maxime C
+ hapelet\nTuteur universitaire : Damien Marchal
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Vidéo 360 + R&D
+DTSTART;TZID=Europe/Paris:20160909T153000
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160905T093400Z
+END:VEVENT
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Paris:20160906T143000
+UID:Icalc979f6d17d196dbc8f2e282fa2ffe7a1
+DTSTAMP:20160905T093400Z
+LOCATION:M5 - A2
+DESCRIPTION:Il existe au sein de CGI une application nommée Generator ..
+ .\nCette application\, bien que puissante\, possédait un défaut majeur .
+ ..\nSon interface d'utilisation était un invite de commandes !\nVenez dé
+ couvrir le résultat de six mois de stage en AngluarJS et Java JEE\, perm
+ ettant\n aux utilisateurs de Generator un contrôle plus clair\, rapide e
+ t précis de leur logiciel\n via une interface graphique développée dans 
+ une politique d'harmonisation des produits de l'équipe.\nStage effectué 
+ par Yassine Badache à CGI.\nRéférent entreprise : Yohan Quertainmont\nTu
+ teur universitaire : Lionel Seinturier
+STATUS:CONFIRMED
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Generator: de l'invite de commande à l'interface
+DTSTART;TZID=Europe/Paris:20160906T134500
+CREATED:19000101T120000Z
+LAST-MODIFIED:20160905T093400Z
+END:VEVENT
+END:VCALENDAR
