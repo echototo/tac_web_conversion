@@ -1,7 +1,7 @@
 // créer un fichier bidon
 
-//url = "http://www.lifl.fr/miny/masterinfo/tableau.php";
-url = "http://btrd.me/tac/tableau.php";
+url = "http://www.lifl.fr/miny/masterinfo/tableau.php";
+//url = "http://btrd.me/tac/tableau.php";
 dataType = "jsonp";
 method = "get";
 

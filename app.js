@@ -82,7 +82,6 @@ class Conversion{
     console.log("totoro");
     var creneauCourant;
     for(var i=0;i<this.creneaux.length;i++){
-
       creneauCourant=this.creneaux[i];
       ajouterElementDansTableauALaFin("tableauAlex",  creneauCourant,
         function () {
@@ -99,18 +98,37 @@ class Conversion{
 
 
   createArray(){
+    var tableau;
+    var tr,trhead,td,th,div,tbody,thead;
+    var creneauxCourant;
+    var id=document.getElementById("tableau");
+    var table= id.appendChild(document.createElement("table"));
+    table.className="table table-striped";
+    avoirToutLeTableau("tableauLePallec", function (json) {
+        tableau = json.donnees.tableau;
 
-  var body=document.getElementsByTagName("body")[0];
-  var tableau = avoirToutLeTableau("tableauLePallec",
-     function (json) {
-       var tableau=json.donnees.tableau;
-       for (var i=0;i<tableau.length;i++) {
-  				var creneauCourant = tableau[i];
-  				var texte = JSON.stringify (creneauCourant);
-  				body.appendChild(document.createTextNode(texte));
-  				body.appendChild(document.createElement("BR"));
-          }
-       });
+        thead =  table.appendChild(document.createElement("thead"));
+        trhead = thead.appendChild(document.createElement("tr"));
+
+        for (var item in tableau[0]){
+          th = trhead.appendChild(document.createElement("th"));
+          th.setAttribute("class","col-lg-3");
+          th.innerHTML=item;
+        }
+
+        tbody = table.appendChild(document.createElement("tbody"));
+
+        for(var i=0;i<tableau.length;i++) {
+            tr = tbody.appendChild(document.createElement("tr"));
+    			  creneauxCourant = tableau[i];
+            for (var item in creneauxCourant){
+              td = tr.appendChild(document.createElement("td"));
+              td.setAttribute("class","col-lg-3");
+              td.innerHTML=creneauxCourant[item];
+            }
+        }
+        console.log(table);
+    });
   }
 
   envoyerAuServeur(){
