@@ -1,18 +1,47 @@
 class Conversion{
+
   constructor(icsData, jsonData){
-    this.icsData = icsData;
-    this.jsonData = jsonData;
-    this.creneaux=new Array;
+    this.icsData = document.getElementById(icsData);
+    this.jsonData = document.getElementById(jsonData);
+    this.creneaux = [];
   }
 
   handleEvent(){
     if(this.creneaux.length===0){
-      this.creneauxFunction();
-      document.getElementById(this.jsonData).value=JSON.stringify(this.creneaux);
+      var icsData =  this.icsData.value;
+      this.creneauxFunction(icsData);
+      this.jsonData.value=JSON.stringify(this.creneaux);
     }else{
       this.envoyerAuServeur();
     }
   }
+
+  creneauxFunction(str){
+      var tableau = str.split("BEGIN:VEVENT");
+      tableau.shift();
+      for(var index=0;index<tableau.length;index++){
+        var subArray=tableau[index].split("\n");
+        var creneau = new Creneau();
+        for(var j=0;j<subArray.length;j++){
+          if(subArray[j].indexOf(":")!=-1){
+            var couple = subArray[j].split(":");
+            if(couple[0].startsWith("DTSTART")){
+              creneau.debut= couple[1];
+            }
+            if(couple[0].startsWith("DTEND")){
+              creneau.fin= couple[1];
+            }
+            if(couple[0].startsWith("SUMMARY")){
+              creneau.resume= couple[1];
+            }
+            if(couple[0].startsWith("LOCATION")){
+              creneau.lieu= couple[1];
+            }
+          }
+        }
+        this.creneaux.push(creneau);
+      }
+    }
 
   convert(){
     var string = document.getElementById(this.icsData).value;
@@ -39,34 +68,6 @@ class Conversion{
       aAfficher+="}\n"
     }
     return aAfficher;
-  }
-
-  creneauxFunction(){
-    var str = document.getElementById(this.icsData).value;
-    var tableau = str.split("BEGIN:VEVENT");
-    tableau.shift();
-    for(var index=0;index<tableau.length;index++){
-      var subArray=tableau[index].split("\n");
-      var creneau = new Creneau();
-      for(var j=0;j<subArray.length;j++){
-        if(subArray[j].indexOf(":")!=-1){
-          var couple = subArray[j].split(":");
-          if(couple[0].startsWith("DTSTART")){
-            creneau.debut= couple[1];
-          }
-          if(couple[0].startsWith("DTEND")){
-            creneau.fin= couple[1];
-          }
-          if(couple[0].startsWith("SUMMARY")){
-            creneau.resume= couple[1];
-          }
-          if(couple[0].startsWith("LOCATION")){
-            creneau.lieu= couple[1];
-          }
-        }
-      }
-      this.creneaux.push(creneau);
-    }
   }
 
   sendElement(){
@@ -137,5 +138,3 @@ class Conversion{
     });
   }
 }
-
-document.getElementById("convertir").addEventListener("click", new Conversion("icsData","jsonData"));
