@@ -11,15 +11,23 @@
 </head>
 
 <body>
-
-    <div id="tableau" class="row">
+    <div class="container">
+        <h1 class="text-center">Agenda</h1>
+        <div id="tableau">
+        </div>
+        <div>
+            <a href="index.html">
+                <button class="btn btn-primary pull-left">Back</button>
+            </a>
+            <button id="delete" class="btn btn-primary pull-right">Delete</button>
+        </div>
     </div>
-
     <script type="text/javascript" src="vendors/serveur8.js"></script>
     <script type="text/javascript" src="src/affichage.js"></script>
     <script type="text/javascript">
-        var affichage = new Affichage("tableau");
-        affichage.createArray();
+        var affichage = new Affichage("tableau", "tableauAlex");
+        document.getElementById("delete").addEventListener("click", affichage);
+        affichage.getData();
     </script>
 </body>
 
