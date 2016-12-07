@@ -1,8 +1,9 @@
 class Conversion {
 
-    constructor(icsData, jsonData) {
+    constructor(icsData, jsonData, name) {
         this.icsData = document.getElementById(icsData);
         this.jsonData = document.getElementById(jsonData);
+        this.name = name;
         this.creneaux = [];
     }
 
@@ -59,9 +60,9 @@ class Conversion {
 
     sendToServer() {
         var context = this;
-        testerExistenceTableau("tableauAlex", function(json) {
+        testerExistenceTableau(this.name, function(json) {
             if (!json.donnees.existence) {
-                creerTableau("tableauAlex");
+                creerTableau(this.name);
             }
             context.sendElement();
         });
@@ -71,12 +72,12 @@ class Conversion {
         var creneauCourant;
         for (var i = 0; i < this.creneaux.length; i++) {
             creneauCourant = this.creneaux[i];
-            ajouterElementDansTableauALaFin("tableauAlex", creneauCourant,
+            ajouterElementDansTableauALaFin(this.name, creneauCourant,
                 function() {
-                    console.log(creneauCourant + " envoyé au serveur");
+                    console.log(creneauCourant.resume + " envoyé au serveur");
                 },
                 function() {
-                    console.log(creneauCourant + " PAS envoyé au serveur");
+                    console.log(creneauCourant.resume + " pas envoyé au serveur");
                 }
             );
         }

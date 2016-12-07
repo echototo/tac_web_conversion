@@ -16,10 +16,10 @@
         <label for="icsData" class="control-label">Données ICS à convertir</label>
         <textarea class="form-control" id="icsData" rows="15">données ICS ici</textarea>
         <BR/>
-        <button id="convertir" class="btn btn-primary">Convertir</button>
+        <button id="convertir" class="btn btn-primary">Convertir / Envoyer</button>
         <BR/>
         <BR/>
-        <label for="jsonData" class="control-label">Résultats JSON de la conversion</label>
+        <label for="jsonData" class="control-label">Résultat JSON de la conversion</label>
         <textarea class="form-control" id="jsonData" rows="15"></textarea>
         <BR/>
         <a href="affichage.html">
@@ -31,7 +31,7 @@
     <script type="text/javascript" src="src/conversion.js"></script>
     <script type="text/javascript" src="src/creneau.js"></script>
     <script type="text/javascript">
-        document.getElementById("convertir").addEventListener("click", new Conversion("icsData", "jsonData"));
+        document.getElementById("convertir").addEventListener("click", new Conversion("icsData", "jsonData", "tableauAlex"));
     </script>
 </body>
 
