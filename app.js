@@ -1,12 +1,3 @@
-class Creneau{
-  constructor(debut,fin,resume,lieu){
-    this.debut=debut;
-    this.fin=fin;
-    this.resume=resume;
-    this.lieu=lieu;
-  }
-}
-
 class Conversion{
   constructor(icsData, jsonData){
     this.icsData = icsData;
@@ -79,16 +70,15 @@ class Conversion{
   }
 
   sendElement(){
-    console.log("totoro");
     var creneauCourant;
     for(var i=0;i<this.creneaux.length;i++){
       creneauCourant=this.creneaux[i];
       ajouterElementDansTableauALaFin("tableauAlex",  creneauCourant,
         function () {
-          console.log(creneauCourant+ "envoyé au serveur");
+          console.log(creneauCourant+ " envoyé au serveur");
         },
         function () {
-         console.log(creneauCourant+ "PAS envoyé au serveur");
+         console.log(creneauCourant+ " PAS envoyé au serveur");
        }
      );
    }
@@ -104,7 +94,7 @@ class Conversion{
     var id=document.getElementById("tableau");
     var table= id.appendChild(document.createElement("table"));
     table.className="table table-striped";
-    avoirToutLeTableau("tableauLePallec", function (json) {
+    avoirToutLeTableau("tableauAlex", function (json) {
         tableau = json.donnees.tableau;
 
         thead =  table.appendChild(document.createElement("thead"));
@@ -127,7 +117,6 @@ class Conversion{
               td.innerHTML=creneauxCourant[item];
             }
         }
-        console.log(table);
     });
   }
 
@@ -136,154 +125,17 @@ class Conversion{
     testerExistenceTableau("tableauAlex",function(json){
       if(json.donnees.existence){
         supprimerTableau("tableauAlex",function(){
-          console.log("supprimer");
           creerTableau("tableauAlex",function(){
-            console.log("recréer");
               context.sendElement();
           });
         });
       }else{
         creerTableau("tableauAlex",function(){
-          console.log("créer");
           context.sendElement();
         });
       }
     });
   }
-
-
-
 }
-
 
 document.getElementById("convertir").addEventListener("click", new Conversion("icsData","jsonData"));
-
-
-/*
-function Conversion(icsData,jsonData){
-  this.icsData = icsData;
-  this.jsonData = jsonData;
-  this.creneaux=new Array;
-}
-
-function Creneau (debut){
-  var debut;
-  this.__defineGetter__("debut",function(){
-      return debut;
-  });
-  this.__defineSetter__("debut",function(value){
-    if(value.startsWith("T")){
-      debut=value;
-    }
-  });
-  this.debut=debut;
-  this.fin=fin;
-  this.resume=resume;
-  this.lieu=lieu;
-}
-
-Conversion.prototype.handleEvent = function(){
-  this.creneauxFunction();
-  document.getElementById(this.jsonData).value=JSON.stringify(this.creneaux);
-}
-
-Conversion.prototype.convert = function(){
-  var string = document.getElementById(this.icsData).value;
-  var tableau = string.split("BEGIN:VEVENT");
-  var aAfficher="";
-  tableau.shift();
-  for(var i=0;i<tableau.length;i++){
-    var subArray=tableau[i].split("\n");
-    subArray.shift();
-    aAfficher+="{\n";
-    var j;
-    for(j=0;j<subArray.length-3;j++){
-      var champ = subArray[j];
-      if(champ.indexOf(":")!=-1){
-        var couple = champ.split(":");
-        aAfficher += " "+couple[0]+" : '"+couple[1]+"',";
-      }
-    }this.icsData = icsData;
-this.jsonData = jsonData;
-this.creneaux=new Array;
-
-    champ = subArray[j++];
-    if(champ.indexOf(":")!=-1){
-      var couple = champ.split(":");
-      aAfficher += " "+couple[0]+" : '"+couple[1]+"'\n";
-    }
-    aAfficher+="}\n"
-    console.log(aAfficher);
-  }
-  return aAfficher;
-}
-
-Conversion.prototype.creneauxFunction = function(){
-  var str = document.getElementById(this.icsData).value;
-  var tableau = str.split("BEGIN:VEVENT");
-  tableau.shift();
-  for(var index=0;index<tableau.length;index++){
-    var subArray=tableau[index].split("\n");
-    var creneau = new Creneau();
-    for(j=0;j<subArray.length;j++){
-      if(subArray[j].indexOf(":")!=-1){
-        var couple = subArray[j].split(":");
-        console.log(couple);
-        if(couple[0].startsWith("DTSTART")){
-          creneau.debut= couple[1];
-        }
-        if(couple[0].startsWith("DTEND")){
-          creneau.fin= couple[1];
-        }
-        if(couple[0].startsWith("SUMMARY")){
-          creneau.resume= couple[1];
-        }
-        if(couple[0].startsWith("LOCATION")){
-          creneau.lieu= couple[1];
-        }
-      }
-    }
-    this.creneaux.push(creneau);
-  }
-}
-/*
-Conversion = {
-  handleEvent:function(){
-    this.convertEvent();
-  },
-  convertEvent:function(){
-    var string = document.getElementById("icsData").value;
-    var tableau = string.split("BEGIN:VEVENT");
-    var aAfficher="";
-    tableau.shift();
-    for(var i=0;i<tableau.length;i++){
-      var subArray=tableau[i].split("\n");
-      subArray.shift();
-      aAfficher+="{\n";
-      var j;
-      for(j=0;j<subArray.length-3;j++){
-        var champ = subArray[j];
-        if(champ.indexOf(":")!=-1){
-          var couple = cfacebook.comhamp.split(":");
-          aAfficher += " "+couple[0]+" : '"+couple[1]+"',";
-        }Event:function(){
-    this.convertEvent();
-  },
-  convertEvent:function(){
-    var string = document.getElementById("icsData").value;
-    var tableau = string.split("BEGIN:VEVENT");
-    var aAfficher="";
-    tableau.shift(
-      }
-      champ = subArray[j++];
-      if(champ.indexOf(":")!=-1){
-        var couple = champ.split(":");
-        aAfficher += " "+couple[0]+" : '"+couple[1]+"'\n";
-      }
-      aAfficher+="}\n"
-      console.log(aAfficher);
-    }
-    document.getElementById("jsonData").value=aAfficher;
-  }
-}
-*/
