@@ -9,16 +9,22 @@ class Conversion {
 
     handleEvent() {
         if (this.creneaux.length === 0) {
-            var icsData = this.icsData.value;
-            this.icsToJson(icsData);
-            this.jsonData.value = JSON.stringify(this.creneaux);
+            try{
+              this.icsToJson(this.icsData.value);
+              this.jsonData.value = JSON.stringify(this.creneaux);
+            } catch(e) {
+              window.alert(e);
+            }
         } else {
             this.sendToServer();
         }
     }
 
-    icsToJson(icsData) {
-        var tableau = icsData.split("BEGIN:VEVENT");
+    icsToJson(icsValue) {
+        if (icsValue === "") {
+            throw new NoDataException();
+        }
+        var tableau = icsValue.split("BEGIN:VEVENT");
         tableau.shift();
         for (var index = 0; index < tableau.length; index++) {
 
