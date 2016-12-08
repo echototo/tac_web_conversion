@@ -13,18 +13,20 @@ class Affichage {
 
     getData() {
         var context = this;
-        var table = this.tableau.appendChild(document.createElement("table"));
-        table.className = "table table-striped table-bordered";
+
         avoirToutLeTableau(this.name, function(data) {
-            context.createArray(table, data);
+            context.createArray(data);
         });
     }
 
-    createArray(table, data) {
+    createArray(data) {
         var tableau;
         var tr, trhead, td, th, div, tbody, thead;
         var creneauxCourant;
         tableau = data.donnees.tableau;
+
+        var table = this.tableau.appendChild(document.createElement("table"));
+        table.className = "table table-striped table-bordered";
 
         thead = table.appendChild(document.createElement("thead"));
         trhead = thead.appendChild(document.createElement("tr"));
