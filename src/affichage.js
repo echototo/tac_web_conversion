@@ -15,7 +15,7 @@ class Affichage {
 
     createArray(data) {
       var tableau;
-      var tr, trhead, td, th, div, tbody, thead;
+      var tr, trhead, td, th, tbody, thead;
       var creneauxCourant;
 
         if((tableau=data.donnees.tableau)===null){
@@ -30,9 +30,9 @@ class Affichage {
         trhead = thead.appendChild(document.createElement("tr"));
         trhead.appendChild(document.createElement("th")).innerHTML = "#";
 
-        for (var item in tableau[0]) {
+        for (var key in tableau[0]) {
             th = trhead.appendChild(document.createElement("th"));
-            th.innerHTML = item;
+            th.innerHTML = key;
         }
 
         tbody = table.appendChild(document.createElement("tbody"));

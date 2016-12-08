@@ -45,7 +45,7 @@ class Conversion {
     }
 
     convertField(creneau, subArray) {
-        if (subArray.indexOf(":") != -1) {
+        if (subArray.indexOf(":") !== -1) {
 
             var couple = subArray.split(":");
 
@@ -78,14 +78,7 @@ class Conversion {
         var creneauCourant;
         for (var i = 0; i < this.creneaux.length; i++) {
             creneauCourant = this.creneaux[i];
-            ajouterElementDansTableauALaFin(this.name, creneauCourant,
-                function() {
-                    console.log(creneauCourant.resume + " envoyé au serveur");
-                },
-                function() {
-                    console.log(creneauCourant.resume + " pas envoyé au serveur");
-                }
-            );
+            ajouterElementDansTableauALaFin(this.name, creneauCourant, null, null);
         }
     }
 }
