@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="file:///home/m2eserv/thoreza/m2/tac_web_conversion/index.html" />
+<title>result_field_when_success</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">result_field_when_success</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>file:///home/m2eserv/thoreza/m2/tac_web_conversion/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=icsData</td>
+	<td>BEGIN:VEVENT<br />DTSTART:20160907T153000Z<br />DTEND:20160907T161500Z<br />SUMMARY:Évolutions pour le logiciel Smiles2Monomers<br />LOCATION:M5 - A1<br />DESCRIPTION:L'objectif principal était d'améliorer et recréer des méthodes pour obtenir des meilleurs résultats.\nStage effectué par Congcong Xu à Inria.\nRéférent entreprise : Maude Pupin\nTuteur universitaire : Marius Bilasco<br />END:VEVENT</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=convertir</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=jsonData</td>
+	<td>[{&quot;debut&quot;:&quot;20160907T153000Z&quot;,&quot;fin&quot;:&quot;20160907T161500Z&quot;,&quot;resume&quot;:&quot;Évolutions pour le logiciel Smiles2Monomers&quot;,&quot;lieu&quot;:&quot;M5 - A1&quot;}]</td>
+</tr>
+</tbody></table>
+</body>
+</html>
