@@ -30,10 +30,10 @@ class Affichage {
         trhead = thead.appendChild(document.createElement("tr"));
         trhead.appendChild(document.createElement("th")).innerHTML = "#";
 
-        for (var key in tableau[0]) {
-            th = trhead.appendChild(document.createElement("th"));
-            th.innerHTML = key;
-        }
+        Object.keys(tableau[0]).forEach(function(key) {
+          th = trhead.appendChild(document.createElement("th"));
+          th.innerHTML = key;
+        });
 
         tbody = table.appendChild(document.createElement("tbody"));
 
@@ -41,10 +41,11 @@ class Affichage {
             tr = tbody.appendChild(document.createElement("tr"));
             creneauxCourant = tableau[i];
             tr.appendChild(document.createElement("th")).innerHTML = i;
-            for (var item in creneauxCourant) {
-                td = tr.appendChild(document.createElement("td"));
-                td.innerHTML = creneauxCourant[item];
-            }
+
+            Object.keys(creneauxCourant).forEach(function(key) {
+              td = tr.appendChild(document.createElement("td"));
+              td.innerHTML = creneauxCourant[key];
+            });
         }
     }
 }
