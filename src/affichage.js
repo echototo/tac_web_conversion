@@ -5,12 +5,6 @@ class Affichage {
         this.name = name;
     }
 
-    /*
-    handleEvent() {
-        supprimerTableau(this.name, this.clearArray());
-    }
-    */
-
     getData() {
         var context = this;
 
@@ -20,17 +14,20 @@ class Affichage {
     }
 
     createArray(data) {
-        var tableau;
-        var tr, trhead, td, th, div, tbody, thead;
-        var creneauxCourant;
-        tableau = data.donnees.tableau;
+      var tableau;
+      var tr, trhead, td, th, div, tbody, thead;
+      var creneauxCourant;
+
+        if((tableau=data.donnees.tableau)===null){
+            this.tableau.innerHTML="Pas de donnée";
+            return;
+        }
 
         var table = this.tableau.appendChild(document.createElement("table"));
         table.className = "table table-striped table-bordered";
 
         thead = table.appendChild(document.createElement("thead"));
         trhead = thead.appendChild(document.createElement("tr"));
-
         trhead.appendChild(document.createElement("th")).innerHTML = "#";
 
         for (var item in tableau[0]) {
@@ -50,10 +47,4 @@ class Affichage {
             }
         }
     }
-
-    /*
-    clearArray() {
-        this.tableau.innerHTML = "";
-    }
-    */
 }
