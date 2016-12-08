@@ -26,15 +26,33 @@ QUnit.test("convert data", function(assert) {
     var fixtureNode = document.getElementById('qunit-fixture');
     fixtureNode.innerHTML = fixture;
 
+    var expectedArray = [];
     var expected = new Creneau();
     expected.debut = "20160907T143000";
     expected.fin = "20160907T151500";
     expected.resume = "De la protection de la vie privée à L'Inria";
     expected.lieu = "M5 - A2";
+    expectedArray.push(expected);
 
     var converter = new Conversion('icsData', 'jsonData');
     converter.icsToJson(data);
-    assert.deepEqual(expected, converter.creneaux[0]);
+    assert.deepEqual(expectedArray, converter.creneaux);
+    assert.deepEqual(JSON.stringify(expectedArray), document.getElementById("jsonData").value);
+});
+
+QUnit.test("convert fake data", function(assert) {
+    var data = "FAKEDATA";
+    var fixture = '<input type="text" id="icsData"/>';
+    fixture += '<input type="text" id="jsonData"/>';
+    var fixtureNode = document.getElementById('qunit-fixture');
+    fixtureNode.innerHTML = fixture;
+
+    var expectedArray = [];
+
+    var converter = new Conversion('icsData', 'jsonData');
+    converter.icsToJson(data);
+    assert.deepEqual(expectedArray, converter.creneaux);
+    assert.deepEqual(JSON.stringify(expectedArray), document.getElementById("jsonData").value);
 });
 
 QUnit.test("convert no data", function(assert) {
@@ -141,21 +159,3 @@ QUnit.test("send to server", function(assert) {
 
     window.ajouterElementDansTableauALaFin.restore();
 });
-
-/*
-QUnit.test("send to server if table does not exist", function(assert) {
-  var converter = new Conversion('icsData', 'jsonData', 'test');
-
-  var data2 = {donnee:{existence:false}};
-
-  var testerExistenceTableauStub = sinon.stub(window,'testerExistenceTableau');
-  var creerTableauStub = sinon.stub(window, 'creerTableau');
-
-  converter.sendToServer();
-  assert.ok(creerTableauStub.calledOnce);
-
-  window.creerTableau.restore();
-  window.testerExistenceTableau.restore();
-
-});
-*/

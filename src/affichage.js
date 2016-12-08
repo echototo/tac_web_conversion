@@ -5,9 +5,11 @@ class Affichage {
         this.name = name;
     }
 
+    /*
     handleEvent() {
         supprimerTableau(this.name, this.clearArray());
     }
+    */
 
     getData() {
         var context = this;
@@ -47,7 +49,9 @@ class Affichage {
         }
     }
 
+    /*
     clearArray() {
         this.tableau.innerHTML = "";
     }
+    */
 }

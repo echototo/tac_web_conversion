@@ -11,7 +11,6 @@ class Conversion {
         if (this.creneaux.length === 0) {
             try{
               this.icsToJson(this.icsData.value);
-              this.jsonData.value = JSON.stringify(this.creneaux);
             } catch(e) {
               window.alert(e);
             }
@@ -31,6 +30,7 @@ class Conversion {
             var creneau = this.convertCreneau(tableau[index]);
             this.creneaux.push(creneau);
         }
+        this.jsonData.value = JSON.stringify(this.creneaux);
     }
 
     convertCreneau(icsData) {
